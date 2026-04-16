@@ -80,3 +80,6 @@ In `spark-app.yaml` you can adjust:
 - `spec.driver.cores`, `spec.driver.memory`
 - `spec.sparkVersion`
 
+Confluence Link :-
+https://jha09.atlassian.net/wiki/spaces/~7120203acd56b4324942a38dcf239c6898ae4f/pages/25690113/Running+PySpark+on+Kubernetes+Minikube+End-to-End+Guide
+
