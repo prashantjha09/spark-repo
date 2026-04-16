@@ -1,0 +1,22 @@
+apiVersion: "sparkoperator.k8s.io/v1beta2"
+kind: SparkApplication
+metadata:
+  name: spark-demo
+  namespace: default
+spec:
+  type: Python
+  mode: cluster
+  image: spark-py-demo:latest
+  mainApplicationFile: local:///app/app.py
+
+  sparkVersion: "3.5.0"
+
+  driver:
+    cores: 1
+    memory: "512m"
+    serviceAccount: default
+
+  executor:
+    cores: 1
+    instances: 3
+    memory: "512m"
